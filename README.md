@@ -1,11 +1,18 @@
 # Browser Extension Playground
 
+This repository is mainly intended to try out some things with browser extensions in order to debug / test how some functionality works. Currently it contains the following:
+- reading/writing from storage across multiple pages
+- background worker event registration
+- content script injection
+- basic message passing from content script to background worker
+
 ## Terminology
 
 | Term | Description |
 |---|---|
 | Extension | Small software program to customize the browsing experience. |
 | Content script | Files that are run in the context of web pages. Content scripts only have access to a very limited api subset [https://developer.chrome.com/docs/extensions/mv3/content_scripts/](https://developer.chrome.com/docs/extensions/mv3/content_scripts/). Can be auto-run on match patterns or programmatically injected. |
+| Extension process | The actual process the extension runs in (vs the process the content script or webpages run in) |
 
 ## Extensions
 
